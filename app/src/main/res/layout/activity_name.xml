@@ -8,23 +8,23 @@
     android:paddingBottom="16dp">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your name" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="380dp"
-        android:layout_height="69dp"
-        android:layout_below="@id/textView"
-        android:hint="Your name" />
+        android:text="Welcome!" />
 
     <Button
-        android:id="@+id/buttonNext"
+        android:id="@+id/buttonThankYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editText"
-        android:layout_centerHorizontal="true"
-        android:text="Next" />
+        android:layout_below="@id/textViewWelcome"
+        android:text="Thank You" />
+
+    <Button
+        android:id="@+id/buttonDontCallMeThat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_toRightOf="@id/buttonThankYou"
+        android:text="Don't call me that" />
 </RelativeLayout>
